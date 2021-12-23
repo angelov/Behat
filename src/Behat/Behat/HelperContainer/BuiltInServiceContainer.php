@@ -44,7 +44,7 @@ final class BuiltInServiceContainer implements ContainerInterface
     /**
      * {@inheritdoc}
      */
-    public function has($id)
+    public function has($id) : bool
     {
         return array_key_exists($id, $this->schema);
     }
